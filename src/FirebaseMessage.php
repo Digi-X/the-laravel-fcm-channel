@@ -134,6 +134,18 @@ class FirebaseMessage
         return $this;
     }
 
+     /**
+     * The FCM notification badge.
+     * @param int
+     * @return $this
+     */
+    public function badge(String $badge)
+    {
+        $this->notification['badge'] = $badge;
+
+        return $this;
+    }
+
     /**
      * The FCM notification click action.
      * @param string
